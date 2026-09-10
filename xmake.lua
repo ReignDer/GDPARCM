@@ -11,10 +11,11 @@ elseif is_mode("release") then
 	outputdir = "Release-$(arch)"
 end
 
+includes("Core/vendor/SFML")
 
 target("Core")
 	set_kind("static")
-	set_languages("c++23")
+	set_languages("c++20")
 	set_runtimes("MT")
 
 	set_targetdir("bin/".. outputdir .. "/Core")
@@ -23,16 +24,17 @@ target("Core")
 	--set_pcxxheader("Core/src/aepch.h")
 	add_headerfiles("Core/src/**.h")
 	add_files("Core/src/**.cpp")
-	add_extrafiles("Core/vendor/**.inl")
+	--add_extrafiles("Core/vendor/**.inl")
 	
 	add_defines("_CRT_SECURE_NO_WARNINGS")
 
 	add_includedirs(
 		--"Core/vendor/spdlog/include", 
 		--"Core/vendor/imgui",
+		"Core/vendor/SFML/include",
 		"Core/src", {public = true} )
 
-	--add_deps("ImGui")
+	add_deps("SFML", {public = true})
 	add_links(
 		--"ImGui",
 		"dwmapi.lib",
@@ -44,6 +46,7 @@ target("Core")
 		add_defines("WINVER=0x0A00")
 		add_defines("_WIN32_WINNT=0x0A00") 
 		add_defines("CORE_PLATFORM_WINDOWS","CORE_BUILD_DLL")
+		add_cxxflags("/utf-8", {tools = "msvc", force = true})
 		--add_defines("GLFW_INCLUDE_NONE")
 	end
 
@@ -71,7 +74,7 @@ target("Core")
 
 target("App")
 	set_kind("binary")
-	set_languages("c++26")
+	set_languages("c++20")
 	set_runtimes("MT")
 
 	set_targetdir("bin/".. outputdir .. "/App")
