@@ -8,7 +8,7 @@ target("SFML")
 	set_kind("static")
 	set_languages("c++20")
 	set_runtimes("MT")
-	add_defines("SFML_STATIC")
+	add_defines("SFML_STATIC", {public = true})
 
 	add_packages("libflac", "libvorbis", "freetype","sheenbidi", "harfbuzz")
 

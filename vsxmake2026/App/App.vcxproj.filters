@@ -18,6 +18,9 @@ xmake version 3.0.5+HEAD.f20295f25
     <Filter Include="App\src">
       <UniqueIdentifier>{901C7D1C-9CC6-47F0-9403-0AD456BF95FC}</UniqueIdentifier>
     </Filter>
+    <Filter Include="App\src\arial">
+      <UniqueIdentifier>{AB1D2BF8-C988-4C10-BB27-87A22F253462}</UniqueIdentifier>
+    </Filter>
 
   </ItemGroup>
   <ItemGroup>
@@ -38,11 +41,80 @@ xmake version 3.0.5+HEAD.f20295f25
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIAL.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBD 1.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBD.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBI 1.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBI.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBLACKITALIC.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALI 1.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALI.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALLGT.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALLGTITL.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALN.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNB.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNBI.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNI.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIBLK.TTF">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCE.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEBoldItalic.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEItalic.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEMTBlack.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialMdm.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialMdmItl.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\arialceb.ttf">
+      <Filter>App\src\arial</Filter>
+    </ClInclude>
 
 
   </ItemGroup>
   <ItemGroup>
 
+    <ClCompile Include="$(XmakeProjectDir)\App\src\Activity2-Pobre.cpp">
+      <Filter>App\src</Filter>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\App\src\App.cpp">
       <Filter>App\src</Filter>
     </ClCompile>

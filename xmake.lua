@@ -37,7 +37,7 @@ target("Core")
 	add_deps("SFML", {public = true})
 	add_links(
 		--"ImGui",
-		"dwmapi.lib",
+		"dwmapi.lib", "opengl32.lib","winmm.lib","advapi32.lib",
 		"user32.lib", "gdi32.lib","shell32.lib"	
 	)
 
@@ -82,7 +82,7 @@ target("App")
 
 	add_headerfiles("App/src/**.h")
 	add_files("App/src/**.cpp")
-
+	add_extrafiles("App/src/arial/**.TTF")
 	
 	--add_includedirs(
 		--"Core/vendor/spdlog/include", 
@@ -91,6 +91,13 @@ target("App")
 	add_links("Core")
 	add_linkdirs("bin/"..outputdir.."/Core")
 
+
+    after_build(function (target)
+
+        local targetdir = target:targetdir()
+
+        os.cp("App/src/arial", path.join(targetdir, "arial"))
+    end)
 
 
 	if is_os("windows") then

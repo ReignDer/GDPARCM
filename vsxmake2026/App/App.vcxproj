@@ -46,7 +46,7 @@ xmake version 3.0.5+HEAD.f20295f25
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>binary</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_DEBUG</XmakeDefines>
+    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_DEBUG;SFML_STATIC</XmakeDefines>
     <XmakeLanguages>cxx20</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -73,7 +73,7 @@ PYTHONPATH=C:\Users\mathi\AppData\Local\.xmake\packages\p\python\3.14.3\179fedc2
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>binary</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_RELEASE</XmakeDefines>
+    <XmakeDefines>WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_RELEASE;SFML_STATIC</XmakeDefines>
     <XmakeLanguages>cxx20</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -110,11 +110,36 @@ PYTHONPATH=C:\Users\mathi\AppData\Local\.xmake\packages\p\python\3.14.3\a5aba9c0
 
   <Import Project="$(XmakeProgramDir)\scripts\vsxmake\vsproj\Xmake.props" />
   <ItemGroup>
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIAL.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBD 1.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBD.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBI 1.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBI.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALBLACKITALIC.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALI 1.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALI.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALLGT.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALLGTITL.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALN.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNB.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNBI.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIALNI.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ARIBLK.TTF" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCE.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEBoldItalic.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEItalic.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialCEMTBlack.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialMdm.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\ArialMdmItl.ttf" />
+    <ClInclude Include="$(XmakeProjectDir)\App\src\arial\arialceb.ttf" />
 
 
   </ItemGroup>
   <ItemGroup>
 
+    <ClCompile Include="$(XmakeProjectDir)\App\src\Activity2-Pobre.cpp">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\App\src\App.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>

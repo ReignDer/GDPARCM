@@ -46,7 +46,7 @@ xmake version 3.0.5+HEAD.f20295f25
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_BUILD_DLL;CORE_DEBUG</XmakeDefines>
+    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_BUILD_DLL;CORE_DEBUG;SFML_STATIC</XmakeDefines>
     <XmakeLanguages>cxx23</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
@@ -73,7 +73,7 @@ PYTHONPATH=C:\Users\mathi\AppData\Local\.xmake\packages\p\python\3.14.3\179fedc2
     <XmakeArch>x64</XmakeArch>
     <XmakeKind>static</XmakeKind>
     <XmakeDefault>true</XmakeDefault>
-    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_BUILD_DLL;CORE_RELEASE</XmakeDefines>
+    <XmakeDefines>_CRT_SECURE_NO_WARNINGS;WINVER=0x0A00;_WIN32_WINNT=0x0A00;CORE_PLATFORM_WINDOWS;CORE_BUILD_DLL;CORE_RELEASE;SFML_STATIC</XmakeDefines>
     <XmakeLanguages>cxx23</XmakeLanguages>
     <XmakeSubSystem>console</XmakeSubSystem>
     <XmakeCudaVersion><!-- nil --></XmakeCudaVersion>
