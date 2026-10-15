@@ -53,7 +53,7 @@ public:
         //Aply velocity to the x position
         x += vx * dt;
 
-        //Comment out line 58 to use the Semi-Implicit Euler on line 65 which makes gravity stable
+        //Comment out line 59 to use the Semi-Implicit Euler on line 66 which makes gravity stable
         //Explicit Euler on Gravitational Kinematics
         //Apply velocity to the y position
         y += vy * dt + (0.5 * GRAVITY * dt * dt);
@@ -61,7 +61,7 @@ public:
         //Apply gravity onto the y velocity for next frame
         vy += GRAVITY * dt;
 
-        //Semi-Explicit Euler on Gravitational Kinematics
+        //Semi-Implicit Euler on Gravitational Kinematics
         //Implement velocity y with gravity
         //y += vy * dt;
 
