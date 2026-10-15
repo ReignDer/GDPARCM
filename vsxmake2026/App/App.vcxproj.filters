@@ -112,9 +112,6 @@ xmake version 3.0.5+HEAD.f20295f25
   </ItemGroup>
   <ItemGroup>
 
-    <ClCompile Include="$(XmakeProjectDir)\App\src\Activity2-Pobre.cpp">
-      <Filter>App\src</Filter>
-    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\App\src\App.cpp">
       <Filter>App\src</Filter>
     </ClCompile>

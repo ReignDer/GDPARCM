@@ -137,9 +137,6 @@ PYTHONPATH=C:\Users\mathi\AppData\Local\.xmake\packages\p\python\3.14.3\a5aba9c0
   </ItemGroup>
   <ItemGroup>
 
-    <ClCompile Include="$(XmakeProjectDir)\App\src\Activity2-Pobre.cpp">
-      <CompileAs>CompileAsCpp</CompileAs>
-    </ClCompile>
     <ClCompile Include="$(XmakeProjectDir)\App\src\App.cpp">
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
