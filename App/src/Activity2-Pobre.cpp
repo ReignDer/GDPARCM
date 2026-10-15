@@ -10,6 +10,7 @@
 /*****************************
 
         USES SFML 3.0
+        Link to GitHub: https://github.com/ReignDer/GDPARCM
         
 *****************************/
 
